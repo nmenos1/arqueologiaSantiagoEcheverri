@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+iframe {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+}
+
+.volver a{
+  position: absolute;
+  right: 3%;
+  top: 4%;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.volver a:hover {
+  color: blue;
+}

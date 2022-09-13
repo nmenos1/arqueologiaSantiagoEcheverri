@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: whitesmoke;
+  width: 100vw;
+  min-height: 60vh;
+  margin: 7vh 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.titulo {
+  margin: 0 5% 2% 12%;
+  font-size: 3vw;
+}
+
+
+.content-links {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin: 0 auto;
+  font-size: 1.8vw;
+  font-family: "Roboto Mono", monospace;
+}
+
+.content-links a{
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.content-links a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+
+figure img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu-links {
+  text-align: center; 
+}
+
+.menu-links a{
+  font-size: 2vw;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.menu-links a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+
+.menu-links span {
+  margin: 0 5%;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  font-size: 1.8vw;
+}
+
+textarea {
+  width: 50%;
+  min-height: 10vh;
+}
+
+/*ticker*/
+
+/* (A) FIXED WRAPPER */
+.hwrap {
+  overflow: hidden; /* HIDE SCROLL BAR */
+  background: yellow;
+  color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+ 
+/* (B) MOVING TICKER WRAPPER */
+.hmove { display: flex; }
+
+/* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+.hitem {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  text-align: center;
+}
+ 
+/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-1700%, 0, 0); }
+}
+.hmove { animation: tickerh linear 200s infinite; }
+.hmove:hover { animation-play-state: paused; }
