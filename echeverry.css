@@ -2,7 +2,13 @@
   box-sizing: border-box;
 }
 
+#flor{
+  position: absolute;
+  top: 0px;
+}
+
 body {
+  /* position:'relative'; */
   background-color: black;
   color: whitesmoke;
   width: 100vw;
@@ -25,6 +31,8 @@ body {
   font-size: 1.8vw;
   font-family: "Roboto Mono", monospace;
 }
+
+
 
 .content-links a{
   text-decoration: none;
