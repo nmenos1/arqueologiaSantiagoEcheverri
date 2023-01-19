@@ -2,9 +2,14 @@
   box-sizing: border-box;
 }
 
-#flor{
-  position: absolute;
-  top: 0px;
+#flor {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  
+    /* border: 1px solid red; */
+    width: 8%;
+
 }
 
 body {
